@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box; /* Prevent padding/margins from expanding elements */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.5s;
+}
+
+.container {
+    max-width: 1400px; /* Wide container to reduce side margins */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 35% 65%; /* Table 35%, charts 65% */
+    grid-template-areas: 
+        "header header"
+        "team-header team-header"
+        "table charts";
+    column-gap: 80px; /* Maintain horizontal separation */
+    row-gap: 0; /* No vertical gap between rows */
+    align-items: start;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    transition: color 0.5s; /* Smooth color transition */
+}
+
+.team-header {
+    grid-area: team-header;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.5s; /* Smooth color transition */
+}
+
+#teamLogo {
+    height: 100px; /* Large logo next to team name */
+}
+
+.table-area {
+    grid-area: table;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Minimal spacing between dropdown and table */
+    align-self: start; /* Align to top of grid area */
+}
+
+.selector-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+select {
+    padding: 5px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 200px;
+}
+
+.table-container {
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Vertical scrolling for many rows */
+    max-width: 450px; /* Comfortable table width */
+    width: 100%;
+    align-self: start; /* Align to top of flex container */
+}
+
+table {
+    width: 100%;
+    max-width: 450px; /* Match table-container */
+    border-collapse: collapse;
+    transition: color 0.5s;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center; /* Center text in all columns */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+th {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+th.sortable:hover {
+    background-color: #e0e0e0;
+}
+
+th.sorted {
+    background-color: #d0d0d0;
+}
+
+.sort-arrow {
+    display: inline-block;
+    width: 10px;
+    text-align: center;
+}
+
+.logo-img {
+    height: 50px; /* Logo size in table */
+    vertical-align: middle;
+}
+
+td:first-child {
+    background-color: #FFFFFF; /* White background for logo column */
+}
+
+.charts-container {
+    grid-area: charts;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for vertical stacking */
+    gap: 20px;
+    width: 100%; /* Full width of grid column */
+    align-self: start; /* Align to top of grid area */
+}
+
+.chart {
+    background: #fff;
+    padding: 20px; /* Taller panels */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%; /* Ensure chart div uses full width */
+}
+
+.chart canvas {
+    height: 400px !important; /* Balanced vertical stretch */
+    width: 100% !important; /* Stretch canvas horizontally */
+}
+
+@media (max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr; /* Stack vertically */
+        grid-template-areas: 
+            "header"
+            "team-header"
+            "table"
+            "charts";
+        row-gap: 0; /* No vertical gap */
+    }
+    .table-area {
+        width: 100%;
+    }
+    .table-container { 
+        width: 100%; 
+        max-width: 100%; /* Full width on small screens */
+        overflow-x: hidden; /* Prevent horizontal scrollbar */
+        margin: 0; /* No margin */
+        padding: 0; /* No padding */
+    }
+    .selector-container {
+        padding-bottom: 10px; /* Minimal spacing */
+    }
+    table { max-width: 100%; }
+    .charts-container { 
+        grid-template-columns: 1fr; 
+        width: 100%; 
+    }
+    .chart { width: 100%; }
+}
