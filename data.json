@@ -1,132 +1,100 @@
 {
 "2026":[
  {
-  "team": "SJS",
-  "playoff wins": 0
+  "team": "SJS"
  },
  {
-  "team": "CHI",
-  "playoff wins": 0
+  "team": "CHI"
  },
  {
-  "team": "NSH",
-  "playoff wins": 0
+  "team": "NSH"
  },
  {
-  "team": "SEA",
-  "playoff wins": 0
+  "team": "SEA"
  },
  {
-  "team": "ANA",
-  "playoff wins": 0
+  "team": "ANA"
  },
  {
-  "team": "BOS",
-  "playoff wins": 0
+  "team": "BOS"
  },
  {
-  "team": "PHI",
-  "playoff wins": 0
+  "team": "PHI"
  },
  {
-  "team": "PIT",
-  "playoff wins": 0
+  "team": "PIT"
  },
  {
-  "team": "BUF",
-  "playoff wins": 0
+  "team": "BUF"
  },
  {
-  "team": "UTA",
-  "playoff wins": 0
+  "team": "UTA"
  },
  {
-  "team": "VAN",
-  "playoff wins": 0
+  "team": "VAN"
  },
  {
-  "team": "NYI",
-  "playoff wins": 0
+  "team": "NYI"
  },
  {
-  "team": "NYR",
-  "playoff wins": 0
+  "team": "NYR"
  },
  {
-  "team": "DET",
-  "playoff wins": 0
+  "team": "DET"
  },
  {
-  "team": "CGY",
-  "playoff wins": 0
+  "team": "CGY"
  },
  {
-  "team": "CBJ",
-  "playoff wins": 0
+  "team": "CBJ"
  },
  {
-  "team": "NJD",
-  "playoff wins": 0
+  "team": "NJD"
  },
  {
-  "team": "TBL",
-  "playoff wins": 0
+  "team": "TBL"
  },
  {
-  "team": "MTL",
-  "playoff wins": 0
+  "team": "MTL"
  },
  {
-  "team": "OTT",
-  "playoff wins": 0
+  "team": "OTT"
  },
  {
-  "team": "MIN",
-  "playoff wins": 0
+  "team": "MIN"
  },
  {
-  "team": "LAK",
-  "playoff wins": 0
+  "team": "LAK"
  },
  {
-  "team": "COL",
-  "playoff wins": 0
+  "team": "COL"
  },
  {
-  "team": "STL",
-  "playoff wins": 0
+  "team": "STL"
  },
  {
-  "team": "VGK",
-  "playoff wins": 0
+  "team": "VGK"
  },
  {
-  "team": "WSH",
-  "playoff wins": 0
+  "team": "WSH"
  },
  {
-  "team": "WPG",
-  "playoff wins": 0
+  "team": "WPG"
  },
  {
-  "team": "TOR",
-  "playoff wins": 0
+  "team": "TOR"
  },
  {
-  "team": "CAR",
-  "playoff wins": 0
+  "team": "CAR"
  },
  {
-  "team": "DAL",
-  "playoff wins": 0
+  "team": "DAL"
  },
  {
-  "team": "EDM",
-  "playoff wins": 0
+  "team": "EDM"
  },
  {
-  "team": "FLA",
-  "playoff wins": 0
+  "team": "FLA"
  }
 ],
 "2025":[
@@ -9591,6 +9559,1118 @@
   "elim order": 6,
   "elim rank": 1,
   "playoff wins": 8
+ }
+],
+"1942":[
+ {
+  "team": "BRK",
+  "elim order": 1,
+  "elim rank": 7,
+  "playoff wins": 0
+ },
+ {
+  "team": "MTL",
+  "elim order": 2,
+  "elim rank": 5,
+  "playoff wins": 1
+ },
+ {
+  "team": "CHI",
+  "elim order": 2,
+  "elim rank": 5,
+  "playoff wins": 1
+ },
+ {
+  "team": "BOS",
+  "elim order": 4,
+  "elim rank": 3,
+  "playoff wins": 2
+ },
+ {
+  "team": "NYR",
+  "elim order": 4,
+  "elim rank": 3,
+  "playoff wins": 2
+ },
+ {
+  "team": "DET",
+  "elim order": 6,
+  "elim rank": 2,
+  "playoff wins": 7
+ },
+ {
+  "team": "TOR",
+  "elim order": 7,
+  "elim rank": 1,
+  "playoff wins": 8
+ }
+],
+"1941":[
+ {
+  "team": "NYA",
+  "elim order": 1,
+  "elim rank": 7,
+  "playoff wins": 0
+ },
+ {
+  "team": "MTL",
+  "elim order": 2,
+  "elim rank": 5,
+  "playoff wins": 1
+ },
+ {
+  "team": "NYR",
+  "elim order": 2,
+  "elim rank": 5,
+  "playoff wins": 1
+ },
+ {
+  "team": "CHI",
+  "elim order": 4,
+  "elim rank": 4,
+  "playoff wins": 2
+ },
+ {
+  "team": "TOR",
+  "elim order": 5,
+  "elim rank": 3,
+  "playoff wins": 3
+ },
+ {
+  "team": "DET",
+  "elim order": 6,
+  "elim rank": 2,
+  "playoff wins": 4
+ },
+ {
+  "team": "BOS",
+  "elim order": 7,
+  "elim rank": 1,
+  "playoff wins": 8
+ }
+],
+"1940":[
+ {
+  "team": "MTL",
+  "elim order": 1,
+  "elim rank": 7,
+  "playoff wins": 0
+ },
+ {
+  "team": "CHI",
+  "elim order": 2,
+  "elim rank": 6,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYA",
+  "elim order": 3,
+  "elim rank": 5,
+  "playoff wins": 1
+ },
+ {
+  "team": "DET",
+  "elim order": 4,
+  "elim rank": 4,
+  "playoff wins": 2
+ },
+ {
+  "team": "BOS",
+  "elim order": 5,
+  "elim rank": 3,
+  "playoff wins": 2
+ },
+ {
+  "team": "TOR",
+  "elim order": 6,
+  "elim rank": 2,
+  "playoff wins": 6
+ },
+ {
+  "team": "NYR",
+  "elim order": 7,
+  "elim rank": 1,
+  "playoff wins": 8
+ }
+],
+"1939":[
+ {
+  "team": "CHI",
+  "elim order": 1,
+  "elim rank": 7,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYA",
+  "elim order": 2,
+  "elim rank": 6,
+  "playoff wins": 0
+ },
+ {
+  "team": "MTL",
+  "elim order": 3,
+  "elim rank": 5,
+  "playoff wins": 1
+ },
+ {
+  "team": "DET",
+  "elim order": 4,
+  "elim rank": 4,
+  "playoff wins": 3
+ },
+ {
+  "team": "NYR",
+  "elim order": 5,
+  "elim rank": 3,
+  "playoff wins": 3
+ },
+ {
+  "team": "TOR",
+  "elim order": 6,
+  "elim rank": 2,
+  "playoff wins": 5
+ },
+ {
+  "team": "BOS",
+  "elim order": 7,
+  "elim rank": 1,
+  "playoff wins": 8
+ }
+],
+"1938":[
+ {
+  "team": "MMR",
+  "elim order": 1,
+  "elim rank": 8,
+  "playoff wins": 0
+ },
+ {
+  "team": "DET",
+  "elim order": 2,
+  "elim rank": 7,
+  "playoff wins": 0
+ },
+ {
+  "team": "MTL",
+  "elim order": 3,
+  "elim rank": 6,
+  "playoff wins": 1
+ },
+ {
+  "team": "NYR",
+  "elim order": 4,
+  "elim rank": 5,
+  "playoff wins": 1
+ },
+ {
+  "team": "BOS",
+  "elim order": 5,
+  "elim rank": 4,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYA",
+  "elim order": 6,
+  "elim rank": 3,
+  "playoff wins": 3
+ },
+ {
+  "team": "TOR",
+  "elim order": 7,
+  "elim rank": 2,
+  "playoff wins": 4
+ },
+ {
+  "team": "CHI",
+  "elim order": 8,
+  "elim rank": 1,
+  "playoff wins": 7
+ }
+],
+"1937":[
+ {
+  "team": "NYA",
+  "elim order": 1,
+  "elim rank": 8,
+  "playoff wins": 0
+ },
+ {
+  "team": "CHI",
+  "elim order": 2,
+  "elim rank": 7,
+  "playoff wins": 0
+ },
+ {
+  "team": "TOR",
+  "elim order": 3,
+  "elim rank": 6,
+  "playoff wins": 0
+ },
+ {
+  "team": "BOS",
+  "elim order": 4,
+  "elim rank": 5,
+  "playoff wins": 1
+ },
+ {
+  "team": "MTL",
+  "elim order": 5,
+  "elim rank": 4,
+  "playoff wins": 2
+ },
+ {
+  "team": "MMR",
+  "elim order": 6,
+  "elim rank": 3,
+  "playoff wins": 2
+ },
+ {
+  "team": "NYR",
+  "elim order": 7,
+  "elim rank": 2,
+  "playoff wins": 6
+ },
+ {
+  "team": "DET",
+  "elim order": 8,
+  "elim rank": 1,
+  "playoff wins": 6
+ }
+],
+"1936":[
+ {
+  "team": "MTL",
+  "elim order": 1,
+  "elim rank": 8,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYR",
+  "elim order": 2,
+  "elim rank": 7,
+  "playoff wins": 0
+ },
+ {
+  "team": "BOS",
+  "elim order": 3,
+  "elim rank": 5,
+  "playoff wins": 1
+ },
+ {
+  "team": "CHI",
+  "elim order": 3,
+  "elim rank": 5,
+  "playoff wins": 1
+ },
+ {
+  "team": "MMR",
+  "elim order": 5,
+  "elim rank": 4,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYA",
+  "elim order": 6,
+  "elim rank": 3,
+  "playoff wins": 2
+ },
+ {
+  "team": "TOR",
+  "elim order": 7,
+  "elim rank": 2,
+  "playoff wins": 4
+ },
+ {
+  "team": "DET",
+  "elim order": 8,
+  "elim rank": 1,
+  "playoff wins": 6
+ }
+],
+"1935":[
+ {
+  "team": "SLE",
+  "elim order": 1,
+  "elim rank": 9,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYA",
+  "elim order": 2,
+  "elim rank": 8,
+  "playoff wins": 0
+ },
+ {
+  "team": "DET",
+  "elim order": 3,
+  "elim rank": 7,
+  "playoff wins": 0
+ },
+ {
+  "team": "MTL",
+  "elim order": 4,
+  "elim rank": 5,
+  "playoff wins": 0
+ },
+ {
+  "team": "CHI",
+  "elim order": 4,
+  "elim rank": 5,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYR",
+  "elim order": 6,
+  "elim rank": 3,
+  "playoff wins": 1
+ },
+ {
+  "team": "BOS",
+  "elim order": 6,
+  "elim rank": 3,
+  "playoff wins": 1
+ },
+ {
+  "team": "TOR",
+  "elim order": 8,
+  "elim rank": 2,
+  "playoff wins": 3
+ },
+ {
+  "team": "MMR",
+  "elim order": 9,
+  "elim rank": 1,
+  "playoff wins": 5
+ }
+],
+"1934":[
+ {
+  "team": "BOS",
+  "elim order": 1,
+  "elim rank": 9,
+  "playoff wins": 0
+ },
+ {
+  "team": "SEN",
+  "elim order": 2,
+  "elim rank": 8,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYA",
+  "elim order": 3,
+  "elim rank": 0,
+  "playoff wins": 0
+ },
+ {
+  "team": "MTL",
+  "elim order": 4,
+  "elim rank": 5,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYR",
+  "elim order": 4,
+  "elim rank": 5,
+  "playoff wins": 0
+ },
+ {
+  "team": "TOR",
+  "elim order": 6,
+  "elim rank": 4,
+  "playoff wins": 2
+ },
+ {
+  "team": "MMR",
+  "elim order": 7,
+  "elim rank": 3,
+  "playoff wins": 1
+ },
+ {
+  "team": "DET",
+  "elim order": 8,
+  "elim rank": 2,
+  "playoff wins": 4
+ },
+ {
+  "team": "CHI",
+  "elim order": 9,
+  "elim rank": 1,
+  "playoff wins": 6
+ }
+],
+"1933":[
+ {
+  "team": "SEN",
+  "elim order": 1,
+  "elim rank": 9,
+  "playoff wins": 0
+ },
+ {
+  "team": "CHI",
+  "elim order": 2,
+  "elim rank": 8,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYA",
+  "elim order": 3,
+  "elim rank": 7,
+  "playoff wins": 0
+ },
+ {
+  "team": "MMR",
+  "elim order": 4,
+  "elim rank": 5,
+  "playoff wins": 0
+ },
+ {
+  "team": "MTL",
+  "elim order": 4,
+  "elim rank": 5,
+  "playoff wins": 0
+ },
+ {
+  "team": "DET",
+  "elim order": 6,
+  "elim rank": 4,
+  "playoff wins": 2
+ },
+ {
+  "team": "BOS",
+  "elim order": 7,
+  "elim rank": 3,
+  "playoff wins": 2
+ },
+ {
+  "team": "TOR",
+  "elim order": 8,
+  "elim rank": 2,
+  "playoff wins": 4
+ },
+ {
+  "team": "NYR",
+  "elim order": 9,
+  "elim rank": 1,
+  "playoff wins": 6
+ }
+],
+"1932":[
+ {
+  "team": "NYA",
+  "elim order": 1,
+  "elim rank": 8,
+  "playoff wins": 0
+ },
+ {
+  "team": "BOS",
+  "elim order": 2,
+  "elim rank": 7,
+  "playoff wins": 0
+ },
+ {
+  "team": "DFL",
+  "elim order": 3,
+  "elim rank": 4,
+  "playoff wins": 0
+ },
+ {
+  "team": "CHI",
+  "elim order": 3,
+  "elim rank": 4,
+  "playoff wins": 1
+ },
+ {
+  "team": "MTL",
+  "elim order": 3,
+  "elim rank": 4,
+  "playoff wins": 1
+ },
+ {
+  "team": "MMR",
+  "elim order": 6,
+  "elim rank": 3,
+  "playoff wins": 1
+ },
+ {
+  "team": "NYR",
+  "elim order": 7,
+  "elim rank": 2,
+  "playoff wins": 3
+ },
+ {
+  "team": "TOR",
+  "elim order": 8,
+  "elim rank": 1,
+  "playoff wins": 5
+ }
+],
+"1931":[
+ {
+  "team": "QUA",
+  "elim order": 1,
+  "elim rank": 10,
+  "playoff wins": 0
+ },
+ {
+  "team": "SEN",
+  "elim order": 2,
+  "elim rank": 9,
+  "playoff wins": 0
+ },
+ {
+  "team": "DFL",
+  "elim order": 3,
+  "elim rank": 8,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYA",
+  "elim order": 4,
+  "elim rank": 7,
+  "playoff wins": 0
+ },
+ {
+  "team": "MMR",
+  "elim order": 5,
+  "elim rank": 5,
+  "playoff wins": 0
+ },
+ {
+  "team": "TOR",
+  "elim order": 5,
+  "elim rank": 5,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYR",
+  "elim order": 7,
+  "elim rank": 4,
+  "playoff wins": 2
+ },
+ {
+  "team": "BOS",
+  "elim order": 8,
+  "elim rank": 3,
+  "playoff wins": 2
+ },
+ {
+  "team": "CHI",
+  "elim order": 9,
+  "elim rank": 2,
+  "playoff wins": 5
+ },
+ {
+  "team": "MTL",
+  "elim order": 10,
+  "elim rank": 1,
+  "playoff wins": 6
+ }
+],
+"1930":[
+ {
+  "team": "PIR",
+  "elim order": 1,
+  "elim rank": 10,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYA",
+  "elim order": 2,
+  "elim rank": 9,
+  "playoff wins": 0
+ },
+ {
+  "team": "DCG",
+  "elim order": 3,
+  "elim rank": 8,
+  "playoff wins": 0
+ },
+ {
+  "team": "TOR",
+  "elim order": 4,
+  "elim rank": 7,
+  "playoff wins": 0
+ },
+ {
+  "team": "SEN",
+  "elim order": 5,
+  "elim rank": 6,
+  "playoff wins": 0
+ },
+ {
+  "team": "CHI",
+  "elim order": 6,
+  "elim rank": 5,
+  "playoff wins": 0
+ },
+ {
+  "team": "MMR",
+  "elim order": 7,
+  "elim rank": 4,
+  "playoff wins": 1
+ },
+ {
+  "team": "NYR",
+  "elim order": 8,
+  "elim rank": 3,
+  "playoff wins": 1
+ },
+ {
+  "team": "BOS",
+  "elim order": 9,
+  "elim rank": 2,
+  "playoff wins": 3
+ },
+ {
+  "team": "MTL",
+  "elim order": 10,
+  "elim rank": 1,
+  "playoff wins": 5
+ }
+],
+"1929":[
+ {
+  "team": "CHI",
+  "elim order": 1,
+  "elim rank": 10,
+  "playoff wins": 0
+ },
+ {
+  "team": "PIR",
+  "elim order": 2,
+  "elim rank": 9,
+  "playoff wins": 0
+ },
+ {
+  "team": "MMR",
+  "elim order": 3,
+  "elim rank": 7,
+  "playoff wins": 0
+ },
+ {
+  "team": "SEN",
+  "elim order": 3,
+  "elim rank": 7,
+  "playoff wins": 0
+ },
+ {
+  "team": "DCG",
+  "elim order": 5,
+  "elim rank": 5,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYA",
+  "elim order": 5,
+  "elim rank": 5,
+  "playoff wins": 0
+ },
+ {
+  "team": "MTL",
+  "elim order": 7,
+  "elim rank": 4,
+  "playoff wins": 0
+ },
+ {
+  "team": "TOR",
+  "elim order": 8,
+  "elim rank": 3,
+  "playoff wins": 2
+ },
+ {
+  "team": "NYR",
+  "elim order": 9,
+  "elim rank": 2,
+  "playoff wins": 3
+ },
+ {
+  "team": "BOS",
+  "elim order": 10,
+  "elim rank": 1,
+  "playoff wins": 5
+ }
+],
+"1928":[
+ {
+  "team": "CHI",
+  "elim order": 1,
+  "elim rank": 10,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYA",
+  "elim order": 2,
+  "elim rank": 9,
+  "playoff wins": 0
+ },
+ {
+  "team": "TOR",
+  "elim order": 3,
+  "elim rank": 8,
+  "playoff wins": 0
+ },
+ {
+  "team": "DCG",
+  "elim order": 4,
+  "elim rank": 7,
+  "playoff wins": 0
+ },
+ {
+  "team": "SEN",
+  "elim order": 5,
+  "elim rank": 5,
+  "playoff wins": 0
+ },
+ {
+  "team": "PIR",
+  "elim order": 5,
+  "elim rank": 5,
+  "playoff wins": 1
+ },
+ {
+  "team": "MTL",
+  "elim order": 7,
+  "elim rank": 3,
+  "playoff wins": 0
+ },
+ {
+  "team": "BOS",
+  "elim order": 7,
+  "elim rank": 3,
+  "playoff wins": 1
+ },
+ {
+  "team": "MMR",
+  "elim order": 9,
+  "elim rank": 2,
+  "playoff wins": 5
+ },
+ {
+  "team": "NYR",
+  "elim order": 10,
+  "elim rank": 1,
+  "playoff wins": 5
+ }
+],
+"1927":[
+ {
+  "team": "TSP",
+  "elim order": 1,
+  "elim rank": 10,
+  "playoff wins": 0
+ },
+ {
+  "team": "DCG",
+  "elim order": 2,
+  "elim rank": 9,
+  "playoff wins": 0
+ },
+ {
+  "team": "PIR",
+  "elim order": 3,
+  "elim rank": 8,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYA",
+  "elim order": 4,
+  "elim rank": 7,
+  "playoff wins": 0
+ },
+ {
+  "team": "MMR",
+  "elim order": 5,
+  "elim rank": 5,
+  "playoff wins": 0
+ },
+ {
+  "team": "CHI",
+  "elim order": 5,
+  "elim rank": 5,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYR",
+  "elim order": 7,
+  "elim rank": 3,
+  "playoff wins": 0
+ },
+ {
+  "team": "MTL",
+  "elim order": 7,
+  "elim rank": 3,
+  "playoff wins": 1
+ },
+ {
+  "team": "BOS",
+  "elim order": 9,
+  "elim rank": 2,
+  "playoff wins": 2
+ },
+ {
+  "team": "SEN",
+  "elim order": 10,
+  "elim rank": 1,
+  "playoff wins": 3
+ }
+],
+"1926":[
+ {
+  "team": "MTL",
+  "elim order": 1,
+  "elim rank": 7,
+  "playoff wins": 0
+ },
+ {
+  "team": "NYA",
+  "elim order": 2,
+  "elim rank": 5,
+  "playoff wins": 0
+ },
+ {
+  "team": "TSP",
+  "elim order": 2,
+  "elim rank": 5,
+  "playoff wins": 0
+ },
+ {
+  "team": "BOS",
+  "elim order": 4,
+  "elim rank": 4,
+  "playoff wins": 0
+ },
+ {
+  "team": "PIR",
+  "elim order": 5,
+  "elim rank": 3,
+  "playoff wins": 0
+ },
+ {
+  "team": "SEN",
+  "elim order": 6,
+  "elim rank": 2,
+  "playoff wins": 0
+ },
+ {
+  "team": "MMR",
+  "elim order": 7,
+  "elim rank": 1,
+  "playoff wins": 2
+ }
+],
+"1925":[
+ {
+  "team": "BOS",
+  "elim order": 1,
+  "elim rank": 6,
+  "playoff wins": 0
+ },
+ {
+  "team": "MMR",
+  "elim order": 2,
+  "elim rank": 5,
+  "playoff wins": 0
+ },
+ {
+  "team": "SEN",
+  "elim order": 3,
+  "elim rank": 4,
+  "playoff wins": 0
+ },
+ {
+  "team": "HAM",
+  "elim order": 4,
+  "elim rank": 3,
+  "playoff wins": 0
+ },
+ {
+  "team": "TSP",
+  "elim order": 5,
+  "elim rank": 2,
+  "playoff wins": 0
+ },
+ {
+  "team": "MTL",
+  "elim order": 6,
+  "elim rank": 1,
+  "playoff wins": 2
+ }
+],
+"1924":[
+ {
+  "team": "HAM",
+  "elim order": 1,
+  "elim rank": 4,
+  "playoff wins": 0
+ },
+ {
+  "team": "TSP",
+  "elim order": 2,
+  "elim rank": 3,
+  "playoff wins": 0
+ },
+ {
+  "team": "SEN",
+  "elim order": 3,
+  "elim rank": 2,
+  "playoff wins": 0
+ },
+ {
+  "team": "MTL",
+  "elim order": 4,
+  "elim rank": 1,
+  "playoff wins": 2
+ }
+],
+"1923":[
+ {
+  "team": "HAM",
+  "elim order": 1,
+  "elim rank": 4,
+  "playoff wins": 0
+ },
+ {
+  "team": "TSP",
+  "elim order": 2,
+  "elim rank": 3,
+  "playoff wins": 0
+ },
+ {
+  "team": "MTL",
+  "elim order": 3,
+  "elim rank": 2,
+  "playoff wins": 1
+ },
+ {
+  "team": "SEN",
+  "elim order": 4,
+  "elim rank": 1,
+  "playoff wins": 1
+ }
+],
+"1922":[
+ {
+  "team": "HAM",
+  "elim order": 1,
+  "elim rank": 4,
+  "playoff wins": 0
+ },
+ {
+  "team": "MTL",
+  "elim order": 2,
+  "elim rank": 3,
+  "playoff wins": 0
+ },
+ {
+  "team": "SEN",
+  "elim order": 3,
+  "elim rank": 2,
+  "playoff wins": 0
+ },
+ {
+  "team": "TSP",
+  "elim order": 4,
+  "elim rank": 1,
+  "playoff wins": 1
+ }
+],
+"1921":[
+ {
+  "team": "HAM",
+  "elim order": 1,
+  "elim rank": 4,
+  "playoff wins": 0
+ },
+ {
+  "team": "MTL",
+  "elim order": 2,
+  "elim rank": 3,
+  "playoff wins": 0
+ },
+ {
+  "team": "TSP",
+  "elim order": 3,
+  "elim rank": 2,
+  "playoff wins": 0
+ },
+ {
+  "team": "SEN",
+  "elim order": 4,
+  "elim rank": 1,
+  "playoff wins": 2
+ }
+],
+"1920":[
+ {
+  "team": "QBD",
+  "elim order": 1,
+  "elim rank": 4,
+  "playoff wins": 0
+ },
+ {
+  "team": "MTL",
+  "elim order": 2,
+  "elim rank": 3,
+  "playoff wins": 0
+ },
+ {
+  "team": "TSP",
+  "elim order": 3,
+  "elim rank": 2,
+  "playoff wins": 0
+ },
+ {
+  "team": "SEN",
+  "elim order": 4,
+  "elim rank": 1,
+  "playoff wins": 0
+ }
+],
+"1919":[
+ {
+  "team": "TAN",
+  "elim order": 1,
+  "elim rank": 3,
+  "playoff wins": 0
+ },
+ {
+  "team": "SEN",
+  "elim order": 2,
+  "elim rank": 2,
+  "playoff wins": 1
+ },
+ {
+  "team": "MTL",
+  "elim order": 3,
+  "elim rank": 1,
+  "playoff wins": 4
+ }
+],
+"1918":[
+ {
+  "team": "MWN",
+  "elim order": 1,
+  "elim rank": 4,
+  "playoff wins": 0
+ },
+ {
+  "team": "SEN",
+  "elim order": 2,
+  "elim rank": 3,
+  "playoff wins": 0
+ },
+ {
+  "team": "MTL",
+  "elim order": 3,
+  "elim rank": 2,
+  "playoff wins": 0
+ },
+ {
+  "team": "TAN",
+  "elim order": 4,
+  "elim rank": 1,
+  "playoff wins": 2
  }
 ]
 }
