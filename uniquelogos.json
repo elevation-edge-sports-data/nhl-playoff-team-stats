@@ -1,0 +1,387 @@
+[
+ {
+  "team": "AFM",
+  "Column2": 1973
+ },
+ {
+  "team": "ANA",
+  "Column2": 2025,
+  "Column3": 2014,
+  "Column4": 2011,
+  "Column5": 2007,
+  "Column6": 2000,
+  "Column7": 1994
+ },
+ {
+  "team": "ARI",
+  "Column2": 2022,
+  "Column3": 2015
+ },
+ {
+  "team": "ATL",
+  "Column2": 2000
+ },
+ {
+  "team": "BOS",
+  "Column2": 2026,
+  "Column3": 2025,
+  "Column4": 2024,
+  "Column5": 2009,
+  "Column6": 2008,
+  "Column7": 1996,
+  "Column8": 1950,
+  "Column9": 1935,
+  "Column10": 1933,
+  "Column11": 1927,
+  "Column12": 1925
+ },
+ {
+  "team": "BRK",
+  "Column2": 1942
+ },
+ {
+  "team": "BUF",
+  "Column2": 2021,
+  "Column3": 2011,
+  "Column4": 2007,
+  "Column5": 2000,
+  "Column6": 1997,
+  "Column7": 1971
+ },
+ {
+  "team": "CAR",
+  "Column2": 2000,
+  "Column3": 1998
+ },
+ {
+  "team": "CBJ",
+  "Column2": 2008,
+  "Column3": 2001
+ },
+ {
+  "team": "CLE",
+  "Column2": 1977
+ },
+ {
+  "team": "CLR",
+  "Column2": 1977
+ },
+ {
+  "team": "CGS",
+  "Column2": 1975,
+  "Column3": 1971
+ },
+ {
+  "team": "CGY",
+  "Column2": 2021,
+  "Column3": 1995,
+  "Column4": 1981
+ },
+ {
+  "team": "CHI",
+  "Column2": 2000,
+  "Column3": 1997,
+  "Column4": 1990,
+  "Column5": 1987,
+  "Column6": 1960,
+  "Column7": 1958,
+  "Column8": 1956,
+  "Column9": 1942,
+  "Column10": 1938,
+  "Column11": 1936,
+  "Column12": 1927
+ },
+ {
+  "team": "COL",
+  "Column2": 2000,
+  "Column3": 1996
+ },
+ {
+  "team": "DAL",
+  "Column2": 2022,
+  "Column3": 2014,
+  "Column4": 1995,
+  "Column5": 1994
+ },
+ {
+  "team": "DCG",
+  "Column2": 1928,
+  "Column3": 1927
+ },
+ {
+  "team": "DET",
+  "Column2": 1949,
+  "Column3": 1933
+ },
+ {
+  "team": "DFL",
+  "Column2": 1931
+ },
+ {
+  "team": "EDM",
+  "Column2": 2023,
+  "Column3": 2018,
+  "Column4": 2012,
+  "Column5": 1997,
+  "Column6": 1987,
+  "Column7": 1980,
+  "Column8": 1974,
+  "Column9": 1973
+ },
+ {
+  "team": "FLA",
+  "Column2": 2017,
+  "Column3": 2000,
+  "Column4": 1994
+ },
+ {
+  "team": "HAM",
+  "Column2": 1925,
+  "Column3": 1922,
+  "Column4": 1921
+ },
+ {
+  "team": "HFD",
+  "Column2": 1980,
+  "Column3": 1993
+ },
+ {
+  "team": "KCS",
+  "Column2": 1975
+ },
+ {
+  "team": "LAK",
+  "Column2": 2025,
+  "Column3": 2020,
+  "Column4": 2014,
+  "Column5": 2012,
+  "Column6": 2003,
+  "Column7": 1999,
+  "Column8": 1996,
+  "Column9": 1989,
+  "Column10": 1988,
+  "Column11": 1976,
+  "Column12": 1968
+ },
+ {
+  "team": "MIN",
+  "Column2": 2014,
+  "Column3": 2001
+ },
+ {
+  "team": "MMR",
+  "Column2": 1936,
+  "Column3": 1926,
+  "Column4": 1925
+ },
+ {
+  "team": "MNS",
+  "Column2": 1992,
+  "Column3": 1986,
+  "Column4": 1968
+ },
+ {
+  "team": "MTL",
+  "Column2": 2000,
+  "Column3": 1957,
+  "Column4": 1948,
+  "Column5": 1933,
+  "Column6": 1926,
+  "Column7": 1923,
+  "Column8": 1922,
+  "Column9": 1920,
+  "Column10": 1918
+ },
+ {
+  "team": "MWN",
+  "Column2": 1918
+ },
+ {
+  "team": "NJD",
+  "Column2": 2000,
+  "Column3": 1993,
+  "Column4": 1987,
+  "Column5": 1983
+ },
+ {
+  "team": "NSH",
+  "Column2": 2012,
+  "Column3": 1999
+ },
+ {
+  "team": "NYA",
+  "Column2": 1940,
+  "Column3": 1936,
+  "Column4": 1934,
+  "Column5": 1926
+ },
+ {
+  "team": "NYI",
+  "Column2": 2018,
+  "Column3": 2011,
+  "Column4": 1999,
+  "Column5": 1998,
+  "Column6": 1996,
+  "Column7": 1973
+ },
+ {
+  "team": "NYR",
+  "Column2": 2000,
+  "Column3": 1979,
+  "Column4": 1972,
+  "Column5": 1968,
+  "Column6": 1953,
+  "Column7": 1948,
+  "Column8": 1927
+ },
+ {
+  "team": "OAK",
+  "Column2": 1968
+ },
+ {
+  "team": "OTT",
+  "Column2": 2021,
+  "Column3": 2008,
+  "Column4": 1998,
+  "Column5": 1993
+ },
+ {
+  "team": "PHI",
+  "Column2": 2024,
+  "Column3": 2000,
+  "Column4": 1968
+ },
+ {
+  "team": "PHX",
+  "Column2": 2004,
+  "Column3": 2000,
+  "Column4": 1997
+ },
+ {
+  "team": "PIR",
+  "Column2": 1929,
+  "Column3": 1926
+ },
+ {
+  "team": "PIT",
+  "Column2": 2017,
+  "Column3": 2007,
+  "Column4": 2003,
+  "Column5": 2000,
+  "Column6": 1993,
+  "Column7": 1973,
+  "Column8": 1969,
+  "Column9": 1968
+ },
+ {
+  "team": "QBD",
+  "Column2": 1920
+ },
+ {
+  "team": "QUA",
+  "Column2": 1931
+ },
+ {
+  "team": "QUE",
+  "Column2": 1986,
+  "Column3": 1980
+ },
+ {
+  "team": "SEA",
+  "Column2": 2022
+ },
+ {
+  "team": "SEN",
+  "Column2": 1933,
+  "Column3": 1918
+ },
+ {
+  "team": "SLE",
+  "Column2": 1935
+ },
+ {
+  "team": "SJS",
+  "Column2": 2009,
+  "Column3": 2008,
+  "Column4": 199,
+  "Column5": 1992
+ },
+ {
+  "team": "STL",
+  "Column2": 2026,
+  "Column3": 2009,
+  "Column4": 2000,
+  "Column5": 1999,
+  "Column6": 1990,
+  "Column7": 1988,
+  "Column8": 1985,
+  "Column9": 1979,
+  "Column10": 1968
+ },
+ {
+  "team": "TAN",
+  "Column2": 1919,
+  "Column3": 1918
+ },
+ {
+  "team": "TBL",
+  "Column2": 2012,
+  "Column3": 2008,
+  "Column4": 2002,
+  "Column5": 1993
+ },
+ {
+  "team": "TOR",
+  "Column2": 2017,
+  "Column3": 1988,
+  "Column4": 1983,
+  "Column5": 1971,
+  "Column6": 1968,
+  "Column7": 1964,
+  "Column8": 1939,
+  "Column9": 1928,
+  "Column10": 1927
+ },
+ {
+  "team": "TSP",
+  "Column2": 1927,
+  "Column3": 1926,
+  "Column4": 1923,
+  "Column5": 1920
+ },
+ {
+  "team": "UTA",
+  "Column2": 2026,
+  "Column3": 2025
+ },
+ {
+  "team": "VAN",
+  "Column2": 2020,
+  "Column3": 2008,
+  "Column4": 1998,
+  "Column5": 1993,
+  "Column6": 1979,
+  "Column7": 1971
+ },
+ {
+  "team": "VGK",
+  "Column2": 2018
+ },
+ {
+  "team": "WIN",
+  "Column2": 1996,
+  "Column3": 1990
+ },
+ {
+  "team": "WPG",
+  "Column2": 2012
+ },
+ {
+  "team": "WSH",
+  "Column2": 2008,
+  "Column3": 2003,
+  "Column4": 1998,
+  "Column5": 1996,
+  "Column6": 1975
+ }
+]

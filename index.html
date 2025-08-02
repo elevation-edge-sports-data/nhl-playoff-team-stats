@@ -3,52 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NHL Team Playoff Performance</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-    <script src="script.js"></script>
+    <title>NHL Stanley Cup Playoff Team Stats</title>
 </head>
 <body>
-    <div class="container">
-        <h1 class="header">NHL Team Playoff Performance</h1>
-        <div class="team-header">
-            <span id="teamName"></span>
-            <img id="teamLogo" alt="Team Logo" style="display: none;">
+    <h1>NHL Stanley Cup Playoff Team Stats</h1>
+    <div>
+        <div>
+            <label for="teamSelect">Select Team:</label>
+            <select id="teamSelect">
+                <option value="">Select a team</option>
+            </select>
         </div>
-        <div class="table-area">
-            <div class="selector-container">
-                <label for="teamSelector">Select Team:</label>
-                <select id="teamSelector" onchange="updateVisualization()">
-                    <option value="">Select a team</option>
-                </select>
-            </div>
-            <div class="table-container">
-                <table id="teamDataTable">
-                    <thead>
-                        <tr>
-                            <th>Logo</th>
-                            <th class="sortable" data-column="year">Year <span class="sort-arrow"></span></th>
-                            <th class="sortable" data-column="elim_order">Elimination Number <span class="sort-arrow"></span></th>
-                            <th class="sortable" data-column="elim_rank">Playoff Rank <span class="sort-arrow"></span></th>
-                            <th class="sortable" data-column="playoff_wins">Playoff Wins <span class="sort-arrow"></span></th>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
-            </div>
-        </div>
-        <div class="charts-container">
-            <div class="chart">
-                <canvas id="playoffWinsHistogram"></canvas>
-            </div>
-            <div class="chart">
-                <canvas id="combinedLine"></canvas>
-            </div>
-            <div class="chart">
-                <canvas id="combinedHistogram"></canvas>
-            </div>
-        </div>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Logo</th>
+                    <th>Year</th>
+                    <th>Rank</th>
+                    <th>Elim No.</th>
+                    <th>Playoff Wins</th>
+                </tr>
+            </thead>
+            <tbody id="teamData"></tbody>
+        </table>
+    </div>
+    <div>
+        <canvas id="teamChart"></canvas>
     </div>
 </body>
 </html>

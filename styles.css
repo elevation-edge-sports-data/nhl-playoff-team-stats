@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box; /* Prevent padding/margins from expanding elements */
+    box-sizing: border-box;
 }
 
 body {
@@ -10,23 +10,23 @@ body {
 }
 
 .container {
-    max-width: 1400px; /* Wide container to reduce side margins */
+    max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 35% 65%; /* Table 35%, charts 65% */
+    grid-template-columns: 35% 65%;
     grid-template-areas: 
         "header header"
         "team-header team-header"
         "table charts";
-    column-gap: 80px; /* Maintain horizontal separation */
-    row-gap: 0; /* No vertical gap between rows */
+    column-gap: 80px;
+    row-gap: 0;
     align-items: start;
 }
 
 .header {
     grid-area: header;
     text-align: center;
-    transition: color 0.5s; /* Smooth color transition */
+    transition: color 0.5s;
 }
 
 .team-header {
@@ -39,19 +39,29 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    transition: color 0.5s; /* Smooth color transition */
+    transition: color 0.5s;
 }
 
-#teamLogo {
-    height: 100px; /* Large logo next to team name */
+#teamLogos {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.team-logo {
+    height: 50px;
+    border: 3px solid;
+    border-radius: 5px;
 }
 
 .table-area {
     grid-area: table;
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Minimal spacing between dropdown and table */
-    align-self: start; /* Align to top of grid area */
+    gap: 10px;
+    align-self: start;
 }
 
 .selector-container {
@@ -73,18 +83,18 @@ select {
 }
 
 .table-container {
-    margin: 0; /* No margin */
-    padding: 0; /* No padding */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    overflow-y: auto; /* Vertical scrolling for many rows */
-    max-width: 450px; /* Comfortable table width */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-width: 450px;
     width: 100%;
-    align-self: start; /* Align to top of flex container */
+    align-self: start;
 }
 
 table {
     width: 100%;
-    max-width: 450px; /* Match table-container */
+    max-width: 450px;
     border-collapse: collapse;
     transition: color 0.5s;
 }
@@ -92,8 +102,8 @@ table {
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: center; /* Center text in all columns */
-    white-space: nowrap; /* Prevent text wrapping */
+    text-align: center;
+    white-space: nowrap;
 }
 
 th {
@@ -116,58 +126,59 @@ th.sorted {
 }
 
 .logo-img {
-    height: 50px; /* Logo size in table */
+    height: 50px;
     vertical-align: middle;
 }
 
 td:first-child {
-    background-color: #FFFFFF; /* White background for logo column */
+    background-color: #FFFFFF;
 }
 
 .charts-container {
     grid-area: charts;
     display: grid;
-    grid-template-columns: 1fr; /* Single column for vertical stacking */
+    grid-template-columns: 1fr;
     gap: 20px;
-    width: 100%; /* Full width of grid column */
-    align-self: start; /* Align to top of grid area */
+    width: 100%;
+    align-self: start;
 }
 
 .chart {
     background: #fff;
-    padding: 20px; /* Taller panels */
+    padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 100%; /* Ensure chart div uses full width */
+    width: 100%;
+    transition: background-color 0.5s;
 }
 
 .chart canvas {
-    height: 400px !important; /* Balanced vertical stretch */
-    width: 100% !important; /* Stretch canvas horizontally */
+    height: 400px !important;
+    width: 100% !important;
 }
 
 @media (max-width: 800px) {
     .container {
-        grid-template-columns: 1fr; /* Stack vertically */
+        grid-template-columns: 1fr;
         grid-template-areas: 
             "header"
             "team-header"
             "table"
             "charts";
-        row-gap: 0; /* No vertical gap */
+        row-gap: 0;
     }
     .table-area {
         width: 100%;
     }
     .table-container { 
         width: 100%; 
-        max-width: 100%; /* Full width on small screens */
-        overflow-x: hidden; /* Prevent horizontal scrollbar */
-        margin: 0; /* No margin */
-        padding: 0; /* No padding */
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
     }
     .selector-container {
-        padding-bottom: 10px; /* Minimal spacing */
+        padding-bottom: 10px;
     }
     table { max-width: 100%; }
     .charts-container { 
@@ -175,4 +186,7 @@ td:first-child {
         width: 100%; 
     }
     .chart { width: 100%; }
+    #teamLogos {
+        justify-content: center;
+    }
 }
