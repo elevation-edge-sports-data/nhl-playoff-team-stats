@@ -74,6 +74,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let sortColumn = 'year';
     let sortDirection = 'desc';
 
+    // Default colors
+    const defaultColors = {
+        c1: '#111111',
+        c2: '#A4A9AD',
+        c3: '#A4A9AD',
+        c4: '#111111',
+        c5: '#A4A9AD'
+    };
+
     // Determine base path
     const isGitHubPages = window.location.hostname.includes('github.io');
     const basePaths = isGitHubPages ? ['/nhl-playoff-team-stats', '/docs', '/'] : [''];
@@ -181,9 +190,9 @@ document.addEventListener('DOMContentLoaded', () => {
         Array.from(teams).sort().forEach(team => {
             const option = document.createElement('option');
             option.value = team;
-            option.textContent = teamNames[team] || team;
+            option.textContent = team; // Use abbreviation only
             selector.appendChild(option);
-            console.log(`Added team: ${teamNames[team] || team}`);
+            console.log(`Added team: ${team}`);
         });
         console.log(`Populated ${teams.size} teams`);
     }
@@ -212,27 +221,44 @@ document.addEventListener('DOMContentLoaded', () => {
     window.updateVisualization = function() {
         const team = document.getElementById('teamSelector').value;
         console.log('Updating for team:', team);
+
+        const teamNameElement = document.getElementById('teamName');
+        const teamAbbreviationElement = document.getElementById('teamAbbreviation');
+        const teamLogosElement = document.getElementById('teamLogos');
+
+        if (!teamNameElement || !teamAbbreviationElement || !teamLogosElement) {
+            console.error('Missing DOM elements:', {
+                teamName: !teamNameElement,
+                teamAbbreviation: !teamAbbreviationElement,
+                teamLogos: !teamLogosElement
+            });
+            alert('Error: One or more required DOM elements are missing. Please check index.html.');
+            return;
+        }
+
         if (!team) {
-            document.getElementById('teamName').textContent = '';
-            document.getElementById('teamLogos').innerHTML = '';
-            document.querySelector('h1.header').style.color = '#000000';
-            document.querySelector('.team-header').style.color = '#000000';
+            teamNameElement.textContent = '';
+            teamAbbreviationElement.textContent = '';
+            teamLogosElement.innerHTML = '';
+            document.querySelector('h1.header').style.color = defaultColors.c2;
+            document.querySelector('.team-header').style.color = defaultColors.c2;
             document.getElementById('teamDataTable').style.color = '#000000';
             document.getElementById('teamDataTable').style.backgroundColor = '#FFFFFF';
-            document.getElementById('teamLogos').style.backgroundColor = '#000000';
+            teamLogosElement.style.backgroundColor = defaultColors.c1;
             document.querySelectorAll('.team-logo').forEach(img => {
                 img.style.backgroundColor = '#FFFFFF';
             });
             document.querySelectorAll('.chart').forEach(chart => {
                 chart.style.backgroundColor = '#fff';
             });
+            document.body.style.backgroundColor = defaultColors.c1;
             return;
         }
 
-        // Update team name and logos
-        document.getElementById('teamName').textContent = teamNames[team] || team;
-        const teamLogos = document.getElementById('teamLogos');
-        teamLogos.innerHTML = '';
+        // Update team name, abbreviation, and logos
+        teamNameElement.textContent = teamNames[team] || team;
+        teamAbbreviationElement.textContent = team;
+        teamLogosElement.innerHTML = '';
         const logoYears = (uniqueLogos[team] || []).map(year => parseInt(year)).sort((a, b) => a - b);
         logoYears.forEach(year => {
             const img = document.createElement('img');
@@ -245,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.warn(`Logo failed: ${img.src}`);
                 img.style.display = 'none';
             };
-            teamLogos.appendChild(img);
+            teamLogosElement.appendChild(img);
         });
 
         // Update colors
@@ -257,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.backgroundColor = primaryColor;
         document.querySelector('h1.header').style.color = secondaryColor;
         document.querySelector('.team-header').style.color = secondaryColor;
-        document.getElementById('teamLogos').style.backgroundColor = primaryColor;
+        teamLogosElement.style.backgroundColor = primaryColor;
         document.getElementById('teamDataTable').style.backgroundColor = '#FFFFFF';
         document.querySelectorAll('.chart').forEach(chart => {
             chart.style.backgroundColor = '#fff';
