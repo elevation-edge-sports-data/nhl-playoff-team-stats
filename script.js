@@ -84,9 +84,9 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Configure repository name for GitHub Pages
-    const repoName = 'elevation-edge-sports-data'; // Updated to match your repository
+    const repoName = 'elevation-edge-sports-data';
     const isGitHubPages = window.location.hostname.includes('github.io');
-    const basePaths = isGitHubPages ? [`/${repoName}`, '/docs', '/'] : [''];
+    const basePaths = isGitHubPages ? [`/${repoName}/`, '/docs/', '/'] : [''];
     console.log('Base paths:', basePaths);
 
     // Fetch files
