@@ -1,6 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Script initialized');
 
+    // Debug: Fetch repository root to list files
+    fetch('https://api.github.com/repos/elevation-edge-sports-data/elevation-edge-sports-data/contents/')
+        .then(response => response.json())
+        .then(files => {
+            console.log('Repository files:', files.map(f => f.name));
+        })
+        .catch(error => {
+            console.warn('Failed to fetch repository contents:', error.message);
+        });
+
     // Team code to full name mapping
     const teamNames = {
         'AFM': 'Atlanta Flames',
@@ -86,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Configure repository name for GitHub Pages
     const repoName = 'elevation-edge-sports-data';
     const isGitHubPages = window.location.hostname.includes('github.io');
-    const basePaths = isGitHubPages ? [`/${repoName}/`, '/docs/', '/'] : [''];
+    const basePaths = isGitHubPages ? ['/', `/${repoName}/`, '/docs/'] : [''];
     console.log('Base paths:', basePaths);
 
     // Fetch files
@@ -100,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     console.log(`Loaded: ${url}`);
                     return { response, base };
                 }
-                console.warn(`Fetch failed: ${url} (${response.status})`);
+                console.warn(`Fetch failed: ${url} (Status: ${response.status})`);
             } catch (error) {
                 console.warn(`Fetch error: ${url} (${error.message})`);
             }
@@ -116,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return response.json();
         })
         .then(colorData => {
-            console.log('NHLteamcolors.json:', colorData);
+            console.log('NHLteamcolors.json loaded successfully');
             if (Array.isArray(colorData)) {
                 colorData.forEach(entry => {
                     if (entry.team) {
@@ -132,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(({ response }) => response.json())
         .then(logoData => {
-            console.log('uniquelogos.json:', logoData);
+            console.log('uniquelogos.json loaded successfully');
             if (Array.isArray(logoData)) {
                 logoData.forEach(entry => {
                     if (entry.team) {
@@ -149,12 +159,13 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(({ response }) => response.json())
         .then(jsonData => {
-            console.log('data.json:', jsonData);
+            console.log('data.json loaded successfully');
             data = jsonData || {};
             populateTeamSelector();
         })
         .catch(error => {
-            console.error('Load error:', error);
+            console.error('Load error:', error.message);
+            console.error('Failed to load one or more files: NHLteamcolors.json, uniquelogos.json, data.json');
             alert('Failed to load data. Using fallback teams.');
             data = {};
             populateTeamSelector();
@@ -269,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
             img.style.borderColor = teamTertiaryColors[team] || '#FFFFFF';
             img.style.backgroundColor = '#FFFFFF';
             img.onerror = () => {
-                console.warn(`Logo failed: ${img.src}`);
+                console.warn(`Logo failed to load: ${img.src}`);
                 img.style.display = 'none';
             };
             teamLogosElement.appendChild(img);
