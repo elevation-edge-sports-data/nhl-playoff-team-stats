@@ -85,16 +85,19 @@ select {
 .table-container {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: auto; /* Enable horizontal scrolling */
     overflow-y: auto;
     max-width: 450px;
     width: 100%;
     align-self: start;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+    scrollbar-width: auto; /* Ensure scrollbar visibility (Firefox) */
 }
 
 table {
     width: 100%;
     max-width: 450px;
+    min-width: 650px; /* Ensure all columns are visible */
     border-collapse: collapse;
     transition: color 0.5s;
 }
@@ -173,14 +176,18 @@ td:first-child {
     .table-container { 
         width: 100%; 
         max-width: 100%;
-        overflow-x: hidden;
+        overflow-x: auto; /* Ensure horizontal scrolling on mobile */
         margin: 0;
         padding: 0;
+        -webkit-overflow-scrolling: touch;
     }
     .selector-container {
         padding-bottom: 10px;
     }
-    table { max-width: 100%; }
+    table { 
+        max-width: 100%;
+        min-width: 650px; /* Keep min-width for all columns */
+    }
     .charts-container { 
         grid-template-columns: 1fr; 
         width: 100%; 
@@ -189,4 +196,18 @@ td:first-child {
     #teamLogos {
         justify-content: center;
     }
+}
+
+/* Ensure scrollbar visibility in WebKit browsers */
+.table-container::-webkit-scrollbar {
+    height: 8px;
+}
+.table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.table-container::-webkit-scrollbar-thumb {
+    background: #888;
+}
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
