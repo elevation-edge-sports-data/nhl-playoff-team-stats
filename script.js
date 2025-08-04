@@ -1,11 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Script initialized');
 
-    // Debug: Fetch repository root to list files
+    // Debug: Fetch repository root and subdirectory to list files
     fetch('https://api.github.com/repos/elevation-edge-sports-data/elevation-edge-sports-data/contents/')
         .then(response => response.json())
         .then(files => {
             console.log('Repository files:', files.map(f => f.name));
+            // Check subdirectory
+            fetch('https://api.github.com/repos/elevation-edge-sports-data/elevation-edge-sports-data/contents/nhl-playoff-team-stats')
+                .then(response => response.json())
+                .then(subFiles => {
+                    console.log('Subdirectory files (nhl-playoff-team-stats):', subFiles.map(f => f.name));
+                })
+                .catch(error => {
+                    console.warn('Failed to fetch subdirectory contents:', error.message);
+                });
         })
         .catch(error => {
             console.warn('Failed to fetch repository contents:', error.message);
@@ -93,10 +102,9 @@ document.addEventListener('DOMContentLoaded', () => {
         c5: '#A4A9AD'
     };
 
-    // Configure repository name for GitHub Pages
-    const repoName = 'elevation-edge-sports-data';
+    // Configure base paths for GitHub Pages, prioritizing /nhl-playoff-team-stats/
     const isGitHubPages = window.location.hostname.includes('github.io');
-    const basePaths = isGitHubPages ? ['/', `/${repoName}/`, '/docs/'] : [''];
+    const basePaths = isGitHubPages ? ['/nhl-playoff-team-stats/', '/', '/elevation-edge-sports-data/', '/docs/'] : [''];
     console.log('Base paths:', basePaths);
 
     // Fetch files
@@ -130,11 +138,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (Array.isArray(colorData)) {
                 colorData.forEach(entry => {
                     if (entry.team) {
-                        teamColors[entry.team] = entry.c1 || '#000000';
-                        teamSecondaryColors[entry.team] = entry.c2;
-                        teamTertiaryColors[entry.team] = entry.c3;
-                        teamQuaternaryColors[entry.team] = entry.c4;
-                        teamQuinaryColors[entry.team] = entry.c5;
+                        teamColors[entry.team] = entry.c1 || defaultColors.c1;
+                        teamSecondaryColors[entry.team] = entry.c2 || defaultColors.c2;
+                        teamTertiaryColors[entry.team] = entry.c3 || defaultColors.c3;
+                        teamQuaternaryColors[entry.team] = entry.c4 || defaultColors.c4;
+                        teamQuinaryColors[entry.team] = entry.c5 || defaultColors.c5;
                     }
                 });
             }
@@ -202,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
         Array.from(teams).sort().forEach(team => {
             const option = document.createElement('option');
             option.value = team;
-            option.textContent = team; // Use abbreviation only
+            option.textContent = team;
             selector.appendChild(option);
             console.log(`Added team: ${team}`);
         });
@@ -248,22 +256,30 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        // Reset styles
+        document.body.style.backgroundColor = defaultColors.c1;
+        document.body.style.opacity = '1';
+        document.querySelector('h1.header').style.color = defaultColors.c2;
+        document.querySelector('.team-header').style.color = defaultColors.c2;
+        document.getElementById('teamDataTable').style.color = '#000000';
+        document.getElementById('teamDataTable').style.backgroundColor = '#FFFFFF';
+        teamLogosElement.style.backgroundColor = defaultColors.c1;
+        document.querySelectorAll('.team-logo').forEach(img => {
+            img.style.backgroundColor = '#FFFFFF';
+        });
+        document.querySelectorAll('.chart').forEach(chart => {
+            chart.style.backgroundColor = '#fff';
+        });
+
         if (!team) {
             teamNameElement.textContent = '';
             teamAbbreviationElement.textContent = '';
             teamLogosElement.innerHTML = '';
-            document.querySelector('h1.header').style.color = defaultColors.c2;
-            document.querySelector('.team-header').style.color = defaultColors.c2;
-            document.getElementById('teamDataTable').style.color = '#000000';
-            document.getElementById('teamDataTable').style.backgroundColor = '#FFFFFF';
-            teamLogosElement.style.backgroundColor = defaultColors.c1;
-            document.querySelectorAll('.team-logo').forEach(img => {
-                img.style.backgroundColor = '#FFFFFF';
+            document.querySelector('#teamDataTable tbody').innerHTML = '';
+            ['combinedHistogram', 'combinedLine', 'playoffWinsHistogram'].forEach(id => {
+                const chart = Chart.getChart(id);
+                if (chart) chart.destroy();
             });
-            document.querySelectorAll('.chart').forEach(chart => {
-                chart.style.backgroundColor = '#fff';
-            });
-            document.body.style.backgroundColor = defaultColors.c1;
             return;
         }
 
@@ -286,12 +302,15 @@ document.addEventListener('DOMContentLoaded', () => {
             teamLogosElement.appendChild(img);
         });
 
-        // Update colors
-        const primaryColor = teamColors[team] || '#000000';
-        const secondaryColor = teamSecondaryColors[team] || '#000000';
-        const tertiaryColor = teamTertiaryColors[team] || '#FFFFFF';
-        const quaternaryColor = teamQuaternaryColors[team] || '#000000';
-        const quinaryColor = teamQuinaryColors[team] && teamQuinaryColors[team].toLowerCase() !== '#ffffff' ? teamQuinaryColors[team] : '#000000';
+        // Update colors with safeguards
+        const primaryColor = teamColors[team] && /^#[0-9A-F]{6}$/i.test(teamColors[team]) ? teamColors[team] : defaultColors.c1;
+        const secondaryColor = teamSecondaryColors[team] && /^#[0-9A-F]{6}$/i.test(teamSecondaryColors[team]) ? teamSecondaryColors[team] : defaultColors.c2;
+        const tertiaryColor = teamTertiaryColors[team] && /^#[0-9A-F]{6}$/i.test(teamTertiaryColors[team]) ? teamTertiaryColors[team] : defaultColors.c3;
+        const quaternaryColor = teamQuaternaryColors[team] && /^#[0-9A-F]{6}$/i.test(teamQuaternaryColors[team]) ? teamQuaternaryColors[team] : defaultColors.c4;
+        const quinaryColor = teamQuinaryColors[team] && /^#[0-9A-F]{6}$/i.test(teamQuinaryColors[team]) && teamQuinaryColors[team].toLowerCase() !== '#ffffff' ? teamQuinaryColors[team] : defaultColors.c5;
+
+        console.log('Applying colors:', { primaryColor, secondaryColor, tertiaryColor, quaternaryColor, quinaryColor });
+
         document.body.style.backgroundColor = primaryColor;
         document.querySelector('h1.header').style.color = secondaryColor;
         document.querySelector('.team-header').style.color = secondaryColor;
@@ -398,15 +417,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     {
                         label: 'Playoff Rank Frequency',
                         data: rankFrequencies,
-                        backgroundColor: (teamQuaternaryColors[team] || '#000000') + '80',
-                        borderColor: teamQuaternaryColors[team] || '#000000',
+                        backgroundColor: (quaternaryColor || '#000000') + '80',
+                        borderColor: quaternaryColor || '#000000',
                         borderWidth: 1
                     },
                     {
                         label: 'Elimination Number Frequency',
                         data: orderFrequencies,
-                        backgroundColor: (teamQuinaryColors[team] || '#000000') + '80',
-                        borderColor: teamQuinaryColors[team] || '#000000',
+                        backgroundColor: (quinaryColor || '#000000') + '80',
+                        borderColor: quinaryColor || '#000000',
                         borderWidth: 1
                     }
                 ]
@@ -429,18 +448,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     {
                         label: 'Playoff Rank',
                         data: elimRanks,
-                        borderColor: teamQuaternaryColors[team] || '#000000',
-                        backgroundColor: (teamQuaternaryColors[team] || '#000000') + '80',
+                        borderColor: quaternaryColor || '#000000',
+                        backgroundColor: (quaternaryColor || '#000000') + '80',
                         fill: true,
-                        datalabels: { align: 'top', offset: 4, color: teamQuaternaryColors[team] || '#000000', font: { weight: 'bold' } }
+                        datalabels: { align: 'top', offset: 4, color: quaternaryColor || '#000000', font: { weight: 'bold' } }
                     },
                     {
                         label: 'Elimination Number',
                         data: elimOrders,
-                        borderColor: teamQuinaryColors[team] || '#000000',
-                        backgroundColor: (teamQuinaryColors[team] || '#000000') + '80',
+                        borderColor: quinaryColor || '#000000',
+                        backgroundColor: (quinaryColor || '#000000') + '80',
                         fill: true,
-                        datalabels: { align: 'top', offset: 4, color: teamQuinaryColors[team] || '#000000', font: { weight: 'bold' } }
+                        datalabels: { align: 'top', offset: 4, color: quinaryColor || '#000000', font: { weight: 'bold' } }
                     }
                 ]
             },
@@ -461,8 +480,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 datasets: [{
                     label: 'Playoff Wins Frequency',
                     data: winsFrequencies,
-                    backgroundColor: (teamQuaternaryColors[team] || '#000000') + '80',
-                    borderColor: teamQuaternaryColors[team] || '#000000',
+                    backgroundColor: (quaternaryColor || '#000000') + '80',
+                    borderColor: quaternaryColor || '#000000',
                     borderWidth: 1
                 }]
             },
